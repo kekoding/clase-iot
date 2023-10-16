@@ -1,5 +1,21 @@
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Actividad 0: Elegir un nombre para su equipo
 
 Actividad 1:
@@ -18,12 +34,38 @@ Actividad 1:
 
 
 
+
+DHCP - Asignación de IP automática, cuando el equipo no tiene asignada una IP
+
+RASPBERRY - POR DEFAULT TIENE DHCP - NO LE TIENES QUE ASIGNAR UNA IP ESTÁTICA
+
+LAN (CABLE) - AUTOMÁTICO
+WIFI - AUTOMÁTICO
+
+CUÁL ES LA IP DE MI INTERFAZ WIFI?
+	192.168.4.13
+
+1) RASPBERRY LE VOY A ASIGNAR UNA IP ESTÁTICA - 192.168.1.252
+2) A UNA DE MIS INTERFACES LE VOY CAMBIAR DE AUTOMÁTICO A ESTÁTICO - 192.168.1.2
+3) RASPBERRY LE VOY A ASIGNAR UNA NUEVA IP ESTÁTICA QUE ESTÉ EN MI RED DE WIFI - 192.168.4.252
+4) CAMBIO MI INTERFAZ DE MANUAL A AUTOMÁTICO
+
+
+
+
+
+
+
+
+
 Actividad 1.1:
 
     1. Crear un programa que tome como entrada un color y prenda el LED correspondiente.
     El programa también debe de dejar al usuario elegir si quiere que parpedee o no el LED correspondiente
 
     2. Subir su nuevo programa a git con el título pg1_1_20231011.py
+
+	PD: EL PROGRAMA CORRE EN UN LOOP INFINITO (WHILE TRUE) HASTA DAR CTRL+C
 
 
 
@@ -40,8 +82,15 @@ Actividad 2:
         Entre 10% y 20% Amarillo - sólido
         Arriba del 20% - Rojo - parpadeante
 
-    2. Crear otro programa que lea información de la nube constantemente y cálcule
-    el promedio de temperatura. Esto a manera de similar el comportamiento de nuestro CPU
+    2. Crear otro programa que lea información de la nube constantemente (librería requests) 
+	y cálcule el promedio de temperatura. Esto a manera de similar el comportamiento de nuestro CPU
 
     3. Subir el programa con el título pg2_20231011.py a su repositorio
+
+
+
+
+
+
+
 
