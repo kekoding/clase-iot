@@ -78,9 +78,37 @@ Actividad 1.1:
 Actividad 2:
     1. utilizando la librería psutil, crear un programa que encienda LEDs del RB en
     base a lo siguiente:
-        Menos del 10% de cpu verde - sólido
+        Menos del 10% de CPU verde - sólido
         Entre 10% y 20% Amarillo - sólido
         Arriba del 20% - Rojo - parpadeante
+
+    1.1 - Subir el programa con el título pg2_20231016.py a su repositorio
+    1.2 - Pasar a nuestro RPB utilizando SCP para correrlo desde ahí
+
+    1.0 - Nombre de su equipo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     2. Crear otro programa que lea información de la nube constantemente (librería requests) 
 	y cálcule el promedio de temperatura. Esto a manera de similar el comportamiento de nuestro CPU

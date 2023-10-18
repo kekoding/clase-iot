@@ -1,0 +1,12 @@
+Estándar (Incluidas con Python)
+
+datetime - Fechas. Conversión, visualización, etc
+requests - Puede llamar y mandar servicios web
+open - No tanto librería, sino una función. Abre archivos
+
+
+
+
+No Estándar
+pandas - librería para manipulación de datos
+matplotlib - librería para visualización de datos

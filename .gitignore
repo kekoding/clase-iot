@@ -1,2 +1,4 @@
 *.env
 .venv*
+equipos.json
+.DS_Store
