@@ -6,6 +6,21 @@ data_train = pd.read_csv('train.csv')
 data_test = pd.read_csv('test.csv')
 data_check = pd.read_csv('test_result.csv')
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # %%
 
 data_train = data_train.rename(columns = {'Pclass' :  'TicketClass'})
@@ -13,6 +28,17 @@ data_test = data_test.rename(columns = {'Pclass' : 'TicketClass'})
 
 data_train = data_train.drop(['Name','Ticket','Fare','Cabin','Embarked','Age'],axis =1)
 data_test = data_test.drop(['Name','Age','Ticket','Fare','Cabin','Embarked'], axis =1)
+
+
+
+
+
+
+
+
+
+
+
 
 # %%
 
@@ -24,6 +50,18 @@ data_train.iloc[:,3] = label_encoder_sex.fit_transform(data_train.iloc[:,3])
 
 data_test.iloc[:,2] = label_encoder_sex.fit_transform(data_test.iloc[:,2])
 
+
+
+
+
+
+
+
+
+
+
+
+
 #%%
 
 data_train = data_train[['Sex','SibSp','Parch','TicketClass','Survived']]
@@ -32,11 +70,37 @@ data_test = data_test[['Sex','SibSp','Parch','TicketClass']]
 X_train = data_train.iloc[:,0:4]
 y_train = data_train.iloc[:,4]
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 # %%
 from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
 X_train = sc.fit_transform(X_train)
 X_test = sc.fit_transform(data_test)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # %%
 import keras
