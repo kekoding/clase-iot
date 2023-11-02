@@ -1,0 +1,6 @@
+
+Códigos HTTP
+https://developer.mozilla.org/es/docs/Web/HTTP/Status
+
+Imagen Raspberry
+https://media.vlpt.us/images/mythos/post/5584cec3-97f8-45b4-a8c8-003c574f732c/Raspberry_Pi_OS_Logo.png
