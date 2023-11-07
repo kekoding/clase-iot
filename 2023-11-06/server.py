@@ -14,7 +14,8 @@ def click():
         return 'INGRESA NPIN!!'
     numero_pin = request.args.get('npin', default=0, type=int)
     print(f"el número de pin es {numero_pin}")
-    leds.click_led(numero_pin)
+    leds.click_led()
+    return "OK"
 
 
 if __name__ == '__main__':

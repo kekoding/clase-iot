@@ -1,6 +1,9 @@
 from gpiozero import LED
 
-def click_led(led_pintout:int) -> None:
+led = LED(14)
+
+
+def click_led(pinout:int=14) -> None:
     '''Sí el led está encendido, entonces lo apagado. Si está
     apagado, enciende el LED
 
@@ -10,7 +13,6 @@ def click_led(led_pintout:int) -> None:
     Regresa:
         None
     '''
-    led = LED(led_pintout)
     print(f"led esta activo = {led.is_active}")
     if led.is_active:
         led.off()
