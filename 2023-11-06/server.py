@@ -6,7 +6,10 @@ from gpiozero import LED
 app = Flask(__name__)
 cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 
-led = LED(14)
+diccionario =  {
+    'verde':LED(14),
+    'azul':LED(15)
+}
 
 @app.route('/', methods=['GET', 'POST'])
 def hello():
@@ -14,8 +17,13 @@ def hello():
 
 @app.route('/led', methods=['GET'])
 def click():
-    leds.click_led(led)
-    return "OK"
+    nombre_led = request.args.get('led', default='', type=str)
+    if nombre_led not in diccionario.keys():
+        return "Solo se permiten azul o verde para el parámetro led"
+    led = diccionario.get(nombre_led)
+    print(f'El led {led} fue seleccionado por la llave {nombre_led}')
+    msg : str = leds.click_led(led)
+    return msg
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=4444, debug=True)
