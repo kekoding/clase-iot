@@ -1,9 +1,7 @@
+import time
 from gpiozero import LED
 
-led = LED(14)
-
-
-def click_led(pinout:int=14) -> None:
+def click_led(led:LED) -> None:
     '''Sí el led está encendido, entonces lo apagado. Si está
     apagado, enciende el LED
 

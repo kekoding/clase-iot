@@ -1,8 +1,12 @@
 from flask import jsonify, request, render_template, Flask
+from flask_cors import CORS, cross_origin
 from servicios import leds
+from gpiozero import LED
 
 app = Flask(__name__)
-# cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
+cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
+
+led = LED(14)
 
 @app.route('/', methods=['GET', 'POST'])
 def hello():
@@ -10,13 +14,8 @@ def hello():
 
 @app.route('/led', methods=['GET'])
 def click():
-    if 'npin' not in request.args.keys():
-        return 'INGRESA NPIN!!'
-    numero_pin = request.args.get('npin', default=0, type=int)
-    print(f"el número de pin es {numero_pin}")
-    leds.click_led()
+    leds.click_led(led)
     return "OK"
-
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=4444, debug=True)
