@@ -11,6 +11,7 @@ def click_led(led_pintout:int) -> None:
         None
     '''
     led = LED(led_pintout)
+    print(f"led esta activo = {led.is_active}")
     if led.is_active:
         led.off()
     else:
