@@ -22,3 +22,20 @@ window.addEventListener("load", (event) => {
     false
   );
 });
+
+//Ejemplo de Fetch
+
+async function datosTemperatura() {
+  resultado = await fetch(
+    "https://archive-api.open-meteo.com/v1/era5?latitude=52.52&longitude=13.41&start_date=2021-01-01&end_date=2021-12-31&hourly=temperature_2m"
+  );
+  datos = await resultado.json();
+
+  const datosTemperatura = datos.hourly.temperature_2m;
+  let acumulador = 0;
+  datosTemperatura.forEach((dato) => {
+    acumulador = acumulador + dato;
+  });
+  let promedio = acumulador / datosTemperatura.length;
+  console.log(promedio);
+}
