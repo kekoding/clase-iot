@@ -22,7 +22,35 @@ function incrementarConteo(contador) {
 let arregloNumeros = [1, 2, 3, 4, 5];
 arregloNumeros.forEach((numero) => console.log(numero * numero));
 
+/*
+for numero in arregloNumeros:
+    numero*numero
+    print(numero*numero)
+*/
+
 arregloNumeros.forEach((numero) => {
   let cuadrado = numero * numero;
   console.log(cuadrado);
 });
+
+/*
+numero : int = 2
+
+typescript -
+*/
+
+let numero1 = "1";
+let numero2 = 1;
+
+if (numero1 === numero2) {
+} else {
+}
+
+persona = { nombre: "Jorge Quintanilla", funcion: "maestro" };
+persona["nombre"];
+persona.nombre;
+
+// ! - Negación (not)
+// && - and
+// || - or
+// ~ - NOR
