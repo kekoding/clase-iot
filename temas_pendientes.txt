@@ -1,3 +1,2 @@
 - encriptacion de información de la base de datos
-- triggers de bases de datos
-- rollback de las bases de datos
+- crontab y servicios Linux
