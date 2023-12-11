@@ -1,2 +1,4 @@
 - encriptacion de información de la base de datos
 - crontab y servicios Linux
+
+- Diego... trtar de conectar por ESP32
