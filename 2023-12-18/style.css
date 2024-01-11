@@ -1,0 +1,76 @@
+@font-face {
+  font-family: regular;
+  src: url(regular.ttf);
+  font-weight: bold;
+}
+
+html {
+  font-family: regular;
+  background-color: rgb(39, 37, 37);
+  color: rgb(245, 237, 237);
+}
+
+.contenedor {
+  display: grid;
+  height: 2000px;
+
+  grid-template-areas:
+    "encabezado encabezado"
+    "navegacion navegacion"
+    "aside main"
+    "footer footer";
+
+  grid-template-rows: 15% 10% 60% 15%;
+  grid-template-columns: 30% 70%;
+}
+
+.encabezado {
+  grid-area: encabezado;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.encabezado img {
+  margin-top: 15px;
+}
+
+.navegacion {
+  grid-area: navegacion;
+}
+.main {
+  grid-area: main;
+}
+
+.aside {
+  grid-area: aside;
+}
+.footer {
+  grid-area: footer;
+}
+
+.aside #temperaturas .datos-temperatura {
+  display: grid;
+  grid-template-rows: 40% 60%;
+  border: 3px solid lightseagreen;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.aside #temperaturas .datos-temperatura .dtemp-header {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 30px;
+}
+.aside #temperaturas .datos-temperatura .dtemp-header svg {
+  margin-top: 20px;
+}
+
+.aside #temperaturas .datos-temperatura .inf-general {
+  padding: 5px;
+}
+
+.aside #temperaturas .datos-temperatura .inf-general p {
+  padding: 0;
+  margin: 0;
+}

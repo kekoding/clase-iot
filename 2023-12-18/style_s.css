@@ -1,0 +1,72 @@
+@font-face {
+  font-family: regular;
+  src: url(regular.ttf);
+  font-weight: bold;
+}
+
+html {
+  background-color: black;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.contenedor {
+  font-family: regular;
+  display: grid;
+  grid-template-areas:
+    "header     header"
+    "nav        nav"
+    "aside      main"
+    "footer     footer";
+
+  grid-template-columns: 20% 80%;
+}
+
+.contenedor > header {
+  grid-area: header;
+}
+
+.contenedor > nav {
+  grid-area: nav;
+}
+
+.contenedor > aside {
+  grid-area: aside;
+}
+
+.contenedor > main {
+  justify-items: center;
+  align-content: center;
+  grid-area: main;
+}
+
+.contenedor > footer {
+  grid-area: footer;
+}
+
+.contenedor #datos-temperatura .temp-data {
+  padding: 10px;
+  border: 2px solid rgb(12, 201, 222);
+  border-radius: 0.5em;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-rows: 40% 60%;
+}
+
+.contenedor #datos-temperatura .temp-data .heading {
+  display: flex;
+  gap: 10px;
+}
+
+.contenedor #datos-temperatura .temp-data .heading > * {
+  float: left;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.contenedor #datos-temperatura .temp-data p {
+  margin: 0;
+}

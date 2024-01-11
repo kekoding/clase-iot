@@ -2,3 +2,21 @@
 - crontab y servicios Linux
 
 - Diego... trtar de conectar por ESP32
+
+
+
+
+
+
+Presentación de Proyecto
+
+Preparar entre 2 y 4 diapositivas con lo siguiente:
+    1) Descripción del Problema
+    2) Solución del Problema
+    3) Stack tecnológico utilizado (Java, Python, PHP, etc)
+    4) Impacto Social del Proyecto
+
+Posteriormente se realizará una demostración en vivo del avance del proyecto (Si ya está terminado mejor :D)
+Cada presentación durará un máximo de 15 minutos y se presentarán el día Lunes 15 de Enero
+
+El 29 de Enero se realizará otra demostración en vivo y se seleccionará el mejor proyecto
